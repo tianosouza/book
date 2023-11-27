@@ -1,24 +1,29 @@
-# README
+# Desafio
+    - Ultizando todos os conhecimentos que aprendemos em aula,  
+      agora crie o seu blog sozinho, e ele será um blog dos livros
+      que leu esse ano, e nele você deverá colocar as seguintes informações:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+      1: Titulo do livro;
+      2: Autor do livro;
+      3: Nota que você deu;
+      4: Descrição do livro;
 
-Things you may want to cover:
+## Resolução
+    - Iniciei um novo projeto com:
+       
+       $ rails new blog
 
-* Ruby version
+    - Gerei a Home com o código:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+       $ rails generate controller home index
+    
+    - Alterei a rota para que a page home fosse a pagina principal.
+       comentando o get 'home/index' e adicionando 
+       o root 'home#index'
+    
+    - Por fim adicionei os itens solicitado no desafio.
+    
+       1: Titulo do livro;
+       2: Autor do livro;
+       3: Nota que você deu;
+       4: Descrição do livro;
